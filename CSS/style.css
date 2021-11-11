@@ -30,11 +30,6 @@ f6c177
     column-gap: 5px;
 }
 
-main {
-    grid-area: main;
-    background-color: #6e6a86;
-}
-
 .nav-header {
     padding: 2rem;
     font-size: 40px;
@@ -76,4 +71,43 @@ a:hover {
 
 a:active {
     text-decoration: none;
+}
+
+main {
+    grid-area: main;
+    background-color: #6e6a86;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: 
+        "card1 card2 card3"
+    ;
+    margin: 10%;
+    justify-items: center;
+}
+
+.contact-block1 {
+    grid-area: card1;
+    background-color: #f6c177;
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+}
+
+.contact-block2 {
+    grid-area: card2;
+    background-color: #f6c177;
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+}
+
+.contact-block3 {
+    grid-area: card3;
+    background-color: #f6c177;
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
 }
